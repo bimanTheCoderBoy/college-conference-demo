@@ -1,0 +1,42 @@
+.date{
+position: relative;
+
+    padding-top: 4rem;
+}
+
+.date-table .row.h{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 7rem;
+    width: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+
+  background-color: #232C65;;
+ 
+   color: beige;
+}
+.date-table .row.d{
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px rgb(228, 223, 223);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    width: 100%;
+    height: 72%;
+}
+.dates-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    width: auto;
+    color: rgba(0, 0, 0, 0.544);
+}

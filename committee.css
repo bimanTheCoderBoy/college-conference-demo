@@ -1,0 +1,86 @@
+.conference-committee{
+    text-align: center;
+} 
+.conference-committee h1{
+    margin-bottom: 5rem;
+    margin-top: -2rem;
+
+}
+.committee-col{
+  /* margin: 1rem; */
+  /* background-color: #232C65;
+  border: 2px solid red ; */
+  display: flex;
+  justify-content: center;
+}
+.committee-col .all{
+ 
+    padding: 1rem;
+
+    height: 390px;
+    width: 280px;
+   
+    border-radius: 4px;
+}
+.committee-col .all:hover{
+  
+   /* border-bottom: 5px solid  linear-gradient(30deg, white,blue) ; */
+
+    box-shadow: 0 0 4px rgb(193, 192, 192);
+}
+/* .border-gradient {
+    border: 10px solid;
+    border-image-slice:1;
+    border-width: 5px;
+  }
+  .border-gradient-purple {
+    border-image:  
+    conic-gradient(
+     to bottom,
+      #d53e33 0deg 90deg,
+      #fbb300 90deg 180deg,
+      #377af5 180deg 270deg,
+      #399953 270deg 360deg
+    );
+  } */
+.committee-col .all img{
+    height: 64%;
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid #232C65;;
+}
+.committee-col .all .content{
+    width: 100%;
+    text-align: center;
+}
+.committee-col .all .content p{
+    /* font-weight: 400; */
+    opacity: 0.8;
+}
+.committee-col .all:hover p{
+    font-weight: 500;
+    opacity: 1;
+}
+.committee-col .all .content h3{
+    /* font-weight: 400; */
+    font-weight:bold;
+    opacity: 0.7;
+}
+.committee-col .all:hover h3{
+    font-weight:bold;
+    opacity: .8;
+}
+.committee-col .all:hover img{
+    filter:opacity(.7);
+}
+
+
+
+
+
+.committee-col.I .all img{
+    height: 64%;
+    width: 100%;
+    border-radius: 0;
+    border: 4px solid #232C65;;
+}

@@ -1,0 +1,26 @@
+.back-home{
+    margin-top: 0.5rem;
+    width: 100vw;
+    height: 70vh;
+    position: fixed;
+    background-image: url(img/aot-pic-7.jpg);
+    z-index: 0;
+}
+.home{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background-color: rgba(0,0,0, .5);
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
+    padding-bottom: 8rem;
+    z-index: 5;
+}
+.home h1{
+    color: #ffa500;
+    
+}
