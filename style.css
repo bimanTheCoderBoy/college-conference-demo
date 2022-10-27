@@ -282,3 +282,17 @@ ul li a:hover{
   position: relative;
   z-index: 100;
 }
+
+
+
+
+
+
+
+
+
+.head-social-link{
+  width: 100%;
+  background-color: #151f66;
+  height: 30px;
+}
