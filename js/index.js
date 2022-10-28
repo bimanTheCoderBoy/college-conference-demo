@@ -146,6 +146,7 @@ var im=0;
 $(".sp-card img").on('click',function(e){
  
 im= $(".modal-body img").attr('src')
+$(".updatee").css("visibility","visible")
  $(".modal-body img").attr('src',e.target.src);
  $(".fadd").addClass("body-fade")
  $(".fadd").removeClass("fad")
@@ -153,10 +154,12 @@ im= $(".modal-body img").attr('src')
 
 });
 $(".btn-pop").on('click',function(){
+  $(".updatee").css("visibility","hidden")
   $(".modal-body img").attr('src',im);
   $(".fadd").removeClass("body-fade")
   $(".fadd").addClass("fad")
   $(".modal").addClass("fade")
+ 
 })
 
 
@@ -190,9 +193,9 @@ let ttt=1;
 
 setTimeout(() => {
   // $(".l").fadeOut();
-  if(ttt===1){
+ 
   $(".load").addClass("unloader")
-  ttt=2;}
+ 
   // $(".load").removeClass("loader")
  
 }, 2500);
@@ -200,10 +203,9 @@ setTimeout(() => {
   $(".a").slideUp();
   $(".t").slideUp();
   $(".g").fadeOut();
-  if(ttt===1){
+  
     $(".load").fadeOut()
-    ttt=2;}
- 
+  
   // $(".load").addClass("unloader")
   // $(".load").removeClass("loader")
  
@@ -222,7 +224,8 @@ window.onload=function(){
   $(".home h1, .home h2, .home h3, #timer").css("top","0rem")
   $(".home-btn").removeClass("fade");
   $(".home-btn").css("font-size","1.5rem")
-if(ttt===1){
-  $(".load").addClass("unloader")
-ttt=2;}
+  $(".updatee").css("visibility","hidden")
+// if(ttt===1){
+//   $(".load").addClass("unloader")
+// ttt=2;}
 }
