@@ -152,13 +152,15 @@ $(".sp-card img").on('click',function(e){
  
 im= $(".modal-body img").attr('src')
  $(".modal-body img").attr('src',e.target.src);
- $(".fad").addClass("body-fade")
+ $(".fadd").addClass("body-fade")
+ $(".fadd").removeClass("fad")
  $(".modal").removeClass("fade")
 
 });
 $(".btn-pop").on('click',function(){
   $(".modal-body img").attr('src',im);
-  $(".fad").removeClass("body-fade")
+  $(".fadd").removeClass("body-fade")
+  $(".fadd").addClass("fad")
   $(".modal").addClass("fade")
 })
 

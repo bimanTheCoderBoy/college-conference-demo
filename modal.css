@@ -45,3 +45,9 @@
     z-index: 150;
     /* opacity: .1; */
 }
+.fad{
+    background: transparent;
+    position:absolute;
+    z-index: -5;
+    /* height: 0; */
+}
