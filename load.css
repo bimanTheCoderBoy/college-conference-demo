@@ -1,0 +1,66 @@
+.loader{
+    position: fixed;
+    z-index: 200;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+}
+.unloader{
+    visibility:hidden;
+}
+.ll img{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    animation: animat 1.5s linear ;
+}
+
+
+@keyframes animat {
+    0%{
+
+        height: 30px;
+        width: 30px;
+    }
+    100%{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+.g{
+    margin-right: 0rem;
+    margin-left: 0rem;
+    /* animation: ani 1s linear infinite; */
+    animation: animatt 1.5s linear,ani 1s linear infinite;
+    /* animation: ; */
+}
+@keyframes animatt {
+    0%{
+        margin-right: 20rem;
+        margin-left: 20rem;
+       
+      
+    }
+    100%{
+        margin-right: 0rem;
+        margin-left: 0rem;
+        
+    }
+}
+@keyframes ani {
+    0%{
+       
+       
+        transform: rotateZ(0deg);
+    }
+    100%{
+     
+        transform: rotateZ(360deg);
+    }
+}
+
