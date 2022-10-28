@@ -19,8 +19,118 @@
     padding: 4rem;
     padding-bottom: 8rem;
     z-index: 5;
+
 }
 .home h1{
     color: #ffa500;
-    
+}
+.home h1, .home h2, .home h3{
+   
+    position: relative;
+    top:500px;
+    transition: 2s;
+}
+#timer{
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: relative;
+    top:500px;
+    transition:2s;
+}
+.start-in{
+    display:inline-block;
+    height: 3rem;
+    width: 10rem;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffa500;
+    margin-right: 2rem;
+    text-transform:uppercase;
+}
+.d{
+   font-size: .8rem;
+   font-weight: 400;
+   opacity: .7;
+}
+.home-btn{
+    font-size: .5rem;
+    font-weight: 500;
+    color: white;
+    box-shadow: 0 0 5px yellow;
+    transition: all 2s ease-in-out ;
+    animation: animate 2s linear infinite;
+
+}
+@keyframes animate {
+    0%,100%{
+        box-shadow: 0 0 5px rgb(255, 255, 0);
+    }
+    50%{
+        box-shadow: 0 0 25px rgb(246, 205, 0);
+    }
+
+}
+.home-btn:hover{
+box-shadow: 0 0 10px rgb(249, 249, 17);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* important area */
+.st{
+    height:30rem;
+    width: 100%;
+    display: grid;
+    align-items: center;
+   background-image: url(http://cfos2022.iitr.ac.in/images/funfact_bg.jpg);
+}
+.st .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    color: aliceblue;
+}
+.section-title, .column-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 85px;
+    text-align: center;
+}
+.section-title:after, .column-title:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    right: 0;
+    color: aliceblue;
+    background-image: url(http://cfos2022.iitr.ac.in/images/shap/title.png);
+    background-repeat: no-repeat;
+    background-size: center center;
+    background-position: contain;
+    width: 70px;
+    height: 10px;
+    margin: auto auto 0;
+    top: auto;
+    bottom: 0;
+}
+.ts-single-funfact h3{
+    font-size: 3.4rem;
+    font-weight: bold;
 }

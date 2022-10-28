@@ -1,0 +1,7 @@
+.imp-div{
+    height: 200px;
+    width: 350px;
+    background-color:rgb(255, 254, 253);
+    border-radius:5px ;
+    box-shadow: 0 0 5px rgb(188, 188, 188);
+}

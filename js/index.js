@@ -52,13 +52,18 @@ var swiper = new Swiper(".brand-slider", {
 
 
 
+// important area
+const a=8,b=5,c=12,d=350;
+let e=f=g=h=0,t=1;
 // sticky-navbar
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementsByClassName("navbar1")[0];
 var sticky = navbar.offsetTop;
-
+var st=document.getElementsByClassName("st")[0].offsetTop;
+console.log(window.pageYOffset);
 function myFunction() {
+  
   if (window.pageYOffset >= sticky) {
     // $('#bt').fadeIn();
    
@@ -72,4 +77,132 @@ function myFunction() {
   }
 
 
+
+
+  if(window.pageYOffset>= st && t==1){
+  t=0;
+    const interval1=setInterval(() => {
+      $(".counterUp1").text(`${e}`)
+      e++;
+      if(e>a)
+      {
+        clearInterval(interval1)
+      }
+    }, 600,(0));
+    const interval2=setInterval(() => {
+      $(".counterUp2").text(`${f}`)
+      f++;
+      if(f>b)
+      {
+        clearInterval(interval2)
+      }
+    }, 350,(1));
+    const interval3=setInterval(() => {
+      $(".counterUp3").text(`${g}`)
+      g++;
+      if(g>c)
+      {
+        clearInterval(interval3)
+      }
+    }, 200,(2));
+    const interval4=setInterval(() => {
+      $(".counterUp4").text(`${h}`)
+      h++;
+      if(h>d)
+      {
+        clearInterval(interval4)
+      }
+    }, 10,(3));
+    
+    }
+
+
 }
+window.onload=function(){
+  // $(".home h1").slideUp();
+  $(".home h1, .home h2, .home h3, #timer").css("top","0rem")
+  $(".home-btn").removeClass("fade");
+  $(".home-btn").css("font-size","1.5rem")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+document.onreadystatechange = function() {
+  if (document.readyState !== "complete") {
+      document.querySelector(
+        "body").style.visibility = "hidden";
+      document.querySelector(
+        "#spinner").style.visibility = "visible";
+  } else {
+      document.querySelector(
+        "#spinner").style.display = "none";
+      document.querySelector(
+        "body").style.visibility = "visible";
+  }
+};
+
+
+
+
+
+
+
+
+
+
+// card-pop-up
+// console.log($(".sp-card"))
+$(".sp-card").on('click',function(e){
+ 
+ let modal=$(".modal-body img")
+ console.log($(".pop-img")[0].currentSrc);
+ $(".pop-img").attr('src',`${e.target.src}`);
+$(".modal").removeClass("fade");
+});
+$(".pop-btn").on('click',function(){
+  $(".modal").addClass("fade");
+})
+
+
+
+
+
+
+
+
+
+
+// time
+let time=new Date(2022,25,11,7,56,12);
+
+// console.log(tim.getMinutes())
+setInterval(() => {
+  let tim=new Date();
+  let tt=Math.abs(time-tim)
+  let t=new Date(tt)
+  $(".dd").text(`: ${t.getDay()}`)
+  $(".hh").text(`: ${t.getHours()}`)
+  $(".m").text(`: ${t.getMinutes()}`)
+  $(".s").text(`: ${t.getSeconds()}`)
+  // time.setSeconds(time.getSeconds()-1);
+}, 1000);
+// console.log(time.getHours())
+
+
+
+
+
+
+
+
+
+
