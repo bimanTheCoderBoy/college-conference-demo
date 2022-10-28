@@ -120,7 +120,7 @@ box-shadow: 0 0 10px rgb(249, 249, 17);
     content: '';
     right: 0;
     color: aliceblue;
-    background-image: url(http://cfos2022.iitr.ac.in/images/shap/title.png);
+    background-image: url(img/funfact_bg.jpg);
     background-repeat: no-repeat;
     background-size: center center;
     background-position: contain;
