@@ -95,8 +95,9 @@ box-shadow: 0 0 10px rgb(249, 249, 17);
     width: 100%;
     display: grid;
     align-items: center;
-   background-image: url(img/funfact_bg.jpg);
-     background-size: cover;
+/*    background-image: url(img/funfact_bg.jpg); */
+    background-color:#ffa500;
+/*      background-size: cover; */
 }
 .st .container {
     width: 100%;
