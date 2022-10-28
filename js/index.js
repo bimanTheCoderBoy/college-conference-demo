@@ -226,6 +226,6 @@ window.onload=function(){
   $(".home-btn").css("font-size","1.5rem")
   $(".updatee").css("visibility","hidden")
 // if(ttt===1){
-//   $(".load").addClass("unloader")
+  // $(".load").addClass("unloader")
 // ttt=2;}
 }
