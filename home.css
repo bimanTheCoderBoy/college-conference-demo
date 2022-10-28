@@ -94,7 +94,7 @@ box-shadow: 0 0 10px rgb(249, 249, 17);
     width: 100%;
     display: grid;
     align-items: center;
-   background-image: url(http://cfos2022.iitr.ac.in/images/funfact_bg.jpg);
+   background-image: url(img/funfact_bg.jpg);
 }
 .st .container {
     width: 100%;
