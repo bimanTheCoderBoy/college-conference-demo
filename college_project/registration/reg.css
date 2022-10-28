@@ -36,6 +36,7 @@ a {
     color:#000000;
     position: relative;
     top: -50px;
+    text-shadow: 1px 1px 1px yellow;
 }
 .carousel-caption p{
     font-family:Arial, Helvetica, sans-serif ;
@@ -54,3 +55,52 @@ a {
 .center-content a h3:hover{
     color: #1127e9;
 }
+
+
+/* extra */
+.containerForCards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.icon-box {
+   display: inline-block;
+    padding: 25px;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 1px 1px 20px rgba(110, 22, 16, 0.12);
+    border-radius: 8px;
+    z-index: 1;
+  }
+
+  
+  .icon-box::before {
+    content: '';
+    position: absolute;
+    background: #cbe0fb;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.3s;
+    z-index: -1;
+  }
+
+  .icon-box:hover::before {
+    background: #106eea;
+    top: 0;
+    border-radius: 0px;
+  }
+
+  .icon {
+    margin-bottom: 15px;
+  }
+ 
+  
+  .icon-box:hover{
+    color: #fff;
+  }
+
+  

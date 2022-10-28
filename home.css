@@ -4,6 +4,7 @@
     height: 70vh;
     position: fixed;
     background-image: url(img/aot-pic-7.jpg);
+    
     z-index: 0;
 }
 .home{
@@ -95,7 +96,12 @@ box-shadow: 0 0 10px rgb(249, 249, 17);
     display: grid;
     align-items: center;
    background-image: url(img/funfact_bg.jpg);
+<<<<<<< HEAD
    background-size: cover;
+=======
+/*     background-color:#ffa500; */
+     background-size: cover;
+>>>>>>> refs/remotes/origin/master
 }
 .st .container {
     width: 100%;
