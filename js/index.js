@@ -121,7 +121,7 @@ function myFunction() {
 window.onload=function(){
   // $(".home h1").slideUp();
 
-  $(".load").addClass("unloader")
+  // $(".load").addClass("unloader")
   $(".home h1, .home h2, .home h3, #timer").css("top","0rem")
   $(".home-btn").removeClass("fade");
   $(".home-btn").css("font-size","1.5rem")
@@ -193,17 +193,17 @@ setInterval(() => {
 // console.log(time.getHours())
 
 
-
-
-
-
-
-
-
-
-
 setTimeout(() => {
   $(".load").addClass("unloader")
   // $(".load").removeClass("loader")
  
 }, 3000);
+
+
+
+
+
+
+
+
+
