@@ -118,14 +118,7 @@ function myFunction() {
 
 
 }
-window.onload=function(){
-  // $(".home h1").slideUp();
 
-  // $(".load").addClass("unloader")
-  $(".home h1, .home h2, .home h3, #timer").css("top","0rem")
-  $(".home-btn").removeClass("fade");
-  $(".home-btn").css("font-size","1.5rem")
-}
 
 
 
@@ -193,11 +186,28 @@ setInterval(() => {
 // console.log(time.getHours())
 
 
+let ttt=1;
+
 setTimeout(() => {
+  // $(".l").fadeOut();
+  if(ttt===1){
   $(".load").addClass("unloader")
+  ttt=2;}
   // $(".load").removeClass("loader")
  
-}, 3000);
+}, 2500);
+setTimeout(() => {
+  $(".a").slideUp();
+  $(".t").slideUp();
+  $(".g").fadeOut();
+  if(ttt===1){
+    $(".load").fadeOut()
+    ttt=2;}
+ 
+  // $(".load").addClass("unloader")
+  // $(".load").removeClass("loader")
+ 
+}, 2100);
 
 
 
@@ -205,5 +215,14 @@ setTimeout(() => {
 
 
 
+window.onload=function(){
+  // $(".home h1").slideUp();
 
 
+  $(".home h1, .home h2, .home h3, #timer").css("top","0rem")
+  $(".home-btn").removeClass("fade");
+  $(".home-btn").css("font-size","1.5rem")
+if(ttt===1){
+  $(".load").addClass("unloader")
+ttt=2;}
+}
