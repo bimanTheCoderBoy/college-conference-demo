@@ -139,7 +139,7 @@ window.onload=function(){
 
 
 
-// hldslxjl
+// hldslxj
 
 
 
@@ -187,7 +187,6 @@ setInterval(() => {
   // time.setSeconds(time.getSeconds()-1);
 }, 1000);
 // console.log(time.getHours())
-
 
 
 
