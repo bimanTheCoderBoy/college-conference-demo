@@ -19,6 +19,8 @@
 .sp-card img{
   height: 100%;
   width: 100%;
+position: relative;
+z-index: 100;
   border-radius: 50%;
   -webkit-transition: .5s linear;
   transition: .5s linear;

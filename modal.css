@@ -1,9 +1,10 @@
 .modal img{
     border: 1px solid black; 
    width: 70%;
-   
+   height: 300px;
    display: block;
    margin: 0px auto;
+   position: relative;
 }
 .modal-body h5{
 
@@ -31,7 +32,16 @@
     font-weight: bold;
 }
 .modal{
-    position:inherit;
+    position:fixed;
     top:0;
     left:30vw;
+}
+.body-fade{
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .82);
+    /* background-color: black; */
+    z-index: 150;
+    /* opacity: .1; */
 }

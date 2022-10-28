@@ -146,17 +146,22 @@ window.onload=function(){
 
 
 // card-pop-up
-// console.log($(".sp-card"))
-$(".sp-card").on('click',function(e){
+// console.log($(".sp-card .img"))
+var im=0;
+$(".sp-card img").on('click',function(e){
  
- let modal=$(".modal-body img")
- console.log($(".pop-img")[0].currentSrc);
- $(".pop-img").attr('src',`${e.target.src}`);
-$(".modal").removeClass("fade");
+im= $(".modal-body img").attr('src')
+ $(".modal-body img").attr('src',e.target.src);
+ $(".fad").addClass("body-fade")
+ $(".modal").removeClass("fade")
+
 });
-$(".pop-btn").on('click',function(){
-  $(".modal").addClass("fade");
+$(".btn-pop").on('click',function(){
+  $(".modal-body img").attr('src',im);
+  $(".fad").removeClass("body-fade")
+  $(".modal").addClass("fade")
 })
+
 
 
 
